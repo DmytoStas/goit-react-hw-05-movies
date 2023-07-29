@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { MoviesAPIService } from 'services/moviesAPIService';
+import MoviesAPIService from 'services/moviesAPIService';
 import TrendingMoviesList from 'components/TrendingMovies';
 
 const moviesAPI = new MoviesAPIService();

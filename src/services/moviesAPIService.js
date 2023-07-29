@@ -1,4 +1,4 @@
-export class MoviesAPIService {
+export default class MoviesAPIService {
   BASE_URL = 'https://api.themoviedb.org/3/';
 
   ACCESS_TOKEN =
