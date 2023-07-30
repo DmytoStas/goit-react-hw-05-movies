@@ -1,13 +1,27 @@
 {
   "files": {
     "main.css": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.becff768.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.a7863cfa.js",
+    "static/js/589.13c7926c.chunk.js": "/goit-react-hw-05-movies/static/js/589.13c7926c.chunk.js",
+    "static/js/554.03729d15.chunk.js": "/goit-react-hw-05-movies/static/js/554.03729d15.chunk.js",
+    "static/js/184.79663e04.chunk.js": "/goit-react-hw-05-movies/static/js/184.79663e04.chunk.js",
+    "static/js/162.db9a750c.chunk.js": "/goit-react-hw-05-movies/static/js/162.db9a750c.chunk.js",
+    "static/js/877.452e90f7.chunk.js": "/goit-react-hw-05-movies/static/js/877.452e90f7.chunk.js",
+    "static/js/122.3d386ea7.chunk.js": "/goit-react-hw-05-movies/static/js/122.3d386ea7.chunk.js",
+    "static/js/705.da53e400.chunk.js": "/goit-react-hw-05-movies/static/js/705.da53e400.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
     "main.7acaea2f.css.map": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css.map",
-    "main.becff768.js.map": "/goit-react-hw-05-movies/static/js/main.becff768.js.map"
+    "main.a7863cfa.js.map": "/goit-react-hw-05-movies/static/js/main.a7863cfa.js.map",
+    "589.13c7926c.chunk.js.map": "/goit-react-hw-05-movies/static/js/589.13c7926c.chunk.js.map",
+    "554.03729d15.chunk.js.map": "/goit-react-hw-05-movies/static/js/554.03729d15.chunk.js.map",
+    "184.79663e04.chunk.js.map": "/goit-react-hw-05-movies/static/js/184.79663e04.chunk.js.map",
+    "162.db9a750c.chunk.js.map": "/goit-react-hw-05-movies/static/js/162.db9a750c.chunk.js.map",
+    "877.452e90f7.chunk.js.map": "/goit-react-hw-05-movies/static/js/877.452e90f7.chunk.js.map",
+    "122.3d386ea7.chunk.js.map": "/goit-react-hw-05-movies/static/js/122.3d386ea7.chunk.js.map",
+    "705.da53e400.chunk.js.map": "/goit-react-hw-05-movies/static/js/705.da53e400.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.becff768.js"
+    "static/js/main.a7863cfa.js"
   ]
 }
