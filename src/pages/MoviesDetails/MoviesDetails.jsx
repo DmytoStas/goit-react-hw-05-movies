@@ -23,17 +23,17 @@ const MovieDetails = () => {
       }
     };
 
-    if (firstMountRef.current) {
-      fetchMovieDetails();
-      return;
-    }
+    fetchMovieDetails();
+    // if (firstMountRef.current) {
+    //   return;
+    // }
 
     firstMountRef.current = true;
   }, [movieId, firstMountRef]);
 
   return (
     <>
-      <Link to={backLinkLocationRef.current}>Go back fix</Link>
+      <Link to={backLinkLocationRef.current}>Go back</Link>
       {firstMountRef.current && <MovieCard movieDetails={details} />}
       <p>Additional information</p>
       <ul>
