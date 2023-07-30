@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 const MovieCard = ({ movieDetails }) => {
+  console.log(movieDetails);
   const {
     title,
     original_title,
