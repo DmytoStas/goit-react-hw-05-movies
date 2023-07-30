@@ -10,7 +10,7 @@ const MovieDetails = () => {
   const { movieId } = useParams();
   const location = useLocation();
   const backLinkLocationRef = useRef(location.state?.from ?? '/');
-  const firstMountRef = useRef(false);
+  // const firstMountRef = useRef(false);
 
   useEffect(() => {
     const fetchMovieDetails = async () => {
@@ -22,18 +22,19 @@ const MovieDetails = () => {
       }
     };
 
-    if (firstMountRef.current) {
-      fetchMovieDetails();
-      return;
-    }
+    fetchMovieDetails();
+    // if (firstMountRef.current) {
+    //   return;
+    // }
 
-    firstMountRef.current = true;
+    // firstMountRef.current = true;
   }, [movieId]);
 
   return (
     <>
       <Link to={backLinkLocationRef.current}>Go back</Link>
-      {firstMountRef.current && <MovieCard movieDetails={details} />}
+      {/* {firstMountRef.current && <MovieCard movieDetails={details} />} */}
+      <MovieCard movieDetails={details} />
       <p>Additional information</p>
       <ul>
         <li>
