@@ -13,6 +13,7 @@ const MovieDetails = () => {
   const firstMountRef = useRef(false);
 
   useEffect(() => {
+    console.log(firstMountRef);
     const fetchMovieDetails = async () => {
       try {
         const data = await moviesAPI.getMovieDetails(movieId);
@@ -28,7 +29,7 @@ const MovieDetails = () => {
     }
 
     firstMountRef.current = true;
-  }, [movieId]);
+  }, [movieId, firstMountRef]);
 
   return (
     <>
