@@ -33,7 +33,7 @@ const MovieDetails = () => {
 
   return (
     <>
-      <Link to={backLinkLocationRef.current}>Go back</Link>
+      <Link to={backLinkLocationRef.current}>Go back fix</Link>
       {firstMountRef.current && <MovieCard movieDetails={details} />}
       <p>Additional information</p>
       <ul>
