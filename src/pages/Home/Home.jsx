@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import MoviesAPIService from 'services/moviesAPIService';
 import TrendingMoviesList from 'components/TrendingMovies';
@@ -7,6 +8,7 @@ const moviesAPI = new MoviesAPIService();
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
+  const location = useLocation();
 
   useEffect(() => {
     fetchTrends();
@@ -24,7 +26,7 @@ const Home = () => {
   return (
     <>
       <h1> Trending today</h1>
-      <TrendingMoviesList movies={movies} />
+      <TrendingMoviesList movies={movies} locationState={location} />
     </>
   );
 };

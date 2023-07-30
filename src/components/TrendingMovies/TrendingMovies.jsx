@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-const { Link } = require('react-router-dom');
+import { Link } from 'react-router-dom';
 
-const TrendingMoviesList = ({ movies }) => {
+const TrendingMoviesList = ({ movies, locationState }) => {
   return (
     <>
       <ul>
@@ -10,7 +10,9 @@ const TrendingMoviesList = ({ movies }) => {
           const { id, title, name } = movie;
           return (
             <li key={id}>
-              <Link to={`movies/${id}`}>{title || name}</Link>
+              <Link to={`movies/${id}`} state={locationState}>
+                {title || name}
+              </Link>
             </li>
           );
         })}
