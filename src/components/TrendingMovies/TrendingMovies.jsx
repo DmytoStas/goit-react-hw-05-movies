@@ -29,6 +29,7 @@ TrendingMoviesList.propTypes = {
       name: PropTypes.string,
     }).isRequired
   ),
+  locationState: PropTypes.object.isRequired,
 };
 
 export default TrendingMoviesList;
