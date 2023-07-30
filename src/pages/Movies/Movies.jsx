@@ -1,4 +1,4 @@
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form } from 'formik';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import MoviesAPIService from 'services/moviesAPIService';
 import QueryMoviesList from 'components/QueryMoviesList';
+import { SearchInput, SubmitButton } from './Movies.styled';
 
 const moviesAPI = new MoviesAPIService();
 
@@ -59,7 +60,7 @@ const Movies = () => {
       <Formik initialValues={{ query: '' }} onSubmit={handleSubmit}>
         <Form>
           <label>
-            <Field
+            <SearchInput
               type="text"
               name="query"
               autoComplete="off"
@@ -68,9 +69,9 @@ const Movies = () => {
             />
           </label>
 
-          <button type="submit">
+          <SubmitButton type="submit">
             <span className="button-label">Search</span>
-          </button>
+          </SubmitButton>
         </Form>
       </Formik>
       {queryMovies.length >= 1 ? (

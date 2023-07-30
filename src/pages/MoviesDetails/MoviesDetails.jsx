@@ -2,6 +2,11 @@ import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import { useEffect, useRef, useState, Suspense } from 'react';
 import MovieCard from '../../components/MovieCard';
 import MoviesAPIService from 'services/moviesAPIService';
+import {
+  AddInfoListWrapp,
+  AdditionalInfo,
+  StyledLink,
+} from './MovieDetails.styled';
 
 const moviesAPI = new MoviesAPIService();
 
@@ -29,17 +34,19 @@ const MovieDetails = () => {
 
   return (
     <>
-      <Link to={backLinkLocationRef.current}>Go back</Link>
+      <StyledLink to={backLinkLocationRef.current}>Go back</StyledLink>
       {firstMountRef.current && <MovieCard movieDetails={details} />}
-      <p>Additional information</p>
-      <ul>
-        <li>
-          <Link to="cast">Cast</Link>
-        </li>
-        <li>
-          <Link to="reviews">Reviews</Link>
-        </li>
-      </ul>
+      <AdditionalInfo>Additional information</AdditionalInfo>
+      <AddInfoListWrapp>
+        <ul>
+          <li>
+            <Link to="cast">Cast</Link>
+          </li>
+          <li>
+            <Link to="reviews">Reviews</Link>
+          </li>
+        </ul>
+      </AddInfoListWrapp>
       <Suspense fallback={<div>Loading...</div>}>
         <Outlet />
       </Suspense>

@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
+import { MovieCardContainer, MovieCardIMG } from './MovieCard.styled';
+
 const MovieCard = ({ movieDetails }) => {
   const {
     title,
@@ -19,17 +21,19 @@ const MovieCard = ({ movieDetails }) => {
       : 'No genres';
 
   return (
-    <div>
-      <img src={pathIMG} alt={title} />
-      <h1>
-        {title || original_title} ({release_date.slice(0, 4)})
-      </h1>
-      <p>User Score: {scorePercentage}%</p>
-      <h2>Overview</h2>
-      <p>{overview}</p>
-      <h3>Genres</h3>
-      <p>{movieGenres}</p>
-    </div>
+    <MovieCardContainer>
+      <MovieCardIMG src={pathIMG} alt={title} />
+      <div>
+        <h1>
+          {title || original_title} ({release_date.slice(0, 4)})
+        </h1>
+        <p>User Score: {scorePercentage}%</p>
+        <h2>Overview</h2>
+        <p>{overview}</p>
+        <h3>Genres</h3>
+        <p>{movieGenres}</p>
+      </div>
+    </MovieCardContainer>
   );
 };
 
